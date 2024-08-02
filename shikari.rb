@@ -5,20 +5,20 @@
 class Shikari < Formula
   desc "An opinionated Dev Cluster Provisioner using Lima"
   homepage "https://github.com/ranjandas/shikari"
-  version "0.4.0"
+  version "0.5.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/Ranjandas/shikari/releases/download/v0.4.0/shikari_Darwin_x86_64.tar.gz"
-      sha256 "793641c066bfc647bbd67b09604258ccb89b585af14f3305cf4eac0e08a3d0dd"
+      url "https://github.com/Ranjandas/shikari/releases/download/v0.5.0/shikari_Darwin_x86_64.tar.gz"
+      sha256 "14384ba96483a8a5d4db6262987c8c7f39e77a33b43e91dfea9fe9dbc027e0ff"
 
       def install
         bin.install "shikari"
       end
     end
     on_arm do
-      url "https://github.com/Ranjandas/shikari/releases/download/v0.4.0/shikari_Darwin_arm64.tar.gz"
-      sha256 "a0ed70ccb17cc7b25e39876e92a27792322f3ac2305489656b6fe25229fbca3b"
+      url "https://github.com/Ranjandas/shikari/releases/download/v0.5.0/shikari_Darwin_arm64.tar.gz"
+      sha256 "b323112efdcfaf1097443f2524d83cb54ca4e57c9dab6d649e3a861318c7a0bf"
 
       def install
         bin.install "shikari"
@@ -29,8 +29,8 @@ class Shikari < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Ranjandas/shikari/releases/download/v0.4.0/shikari_Linux_x86_64.tar.gz"
-        sha256 "899a81a7fd6bb03715d26437ac1fa6219451ca0eef10504084c14098c26f6191"
+        url "https://github.com/Ranjandas/shikari/releases/download/v0.5.0/shikari_Linux_x86_64.tar.gz"
+        sha256 "df54b35f258118c6129467f90d8f285414f4b10e7886f17ea9134270d7411a75"
 
         def install
           bin.install "shikari"
@@ -39,8 +39,8 @@ class Shikari < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Ranjandas/shikari/releases/download/v0.4.0/shikari_Linux_arm64.tar.gz"
-        sha256 "cb01d1f216b1828923d8ed1d74edb54b9e8a996687eed6b45d82ef8d1595b812"
+        url "https://github.com/Ranjandas/shikari/releases/download/v0.5.0/shikari_Linux_arm64.tar.gz"
+        sha256 "9260118e81f1346ad5c1d1b97ca0869cc5194a12193f37dbd8c337c2c376218a"
 
         def install
           bin.install "shikari"
